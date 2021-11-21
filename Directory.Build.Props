@@ -1,0 +1,42 @@
+﻿<Project>
+    <!-- everything should be under source control -->
+    <PropertyGroup Label="Globals">
+    </PropertyGroup>
+
+    <Choose>
+        <When Condition="'$(MSBuildProjectExtension)'=='.csproj'">
+            <PropertyGroup>
+                <ErrorReport>prompt</ErrorReport>
+                <WarningLevel>4</WarningLevel>
+                <DefineConstants />
+                <DelaySign>false</DelaySign>
+                <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+            </PropertyGroup>
+        </When>
+    </Choose>
+
+    <!-- SDK type project should be using new property-->
+    <Choose>
+        <When Condition="'$(UsingMicrosoftNETSdk)'=='true'">
+            <PropertyGroup>
+                <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+                
+            </PropertyGroup>
+        </When>
+    </Choose>
+
+    
+    <Choose>
+        <When Condition="'$(UsingMicrosoftNETSdk)'=='true'">
+            <ItemGroup>
+                <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" PrivateAssets="All" />
+            </ItemGroup>
+        </When>
+    </Choose>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>$(AssemblyName).UnitTests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+</Project>

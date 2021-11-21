@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.79" />
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net48</TargetFramework>
+        <AssemblyTitle>NugetDependency</AssemblyTitle>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="System.ComponentModel.Composition" />
+        <PackageReference Include="System.Data.DataSetExtensions" />
+        <PackageReference Include="Microsoft.CSharp" />
+        <PackageReference Include="Microsoft.AspNet.Cors" />
+        <PackageReference Include="Microsoft.AspNet.Identity.Core" />
+        <PackageReference Include="Microsoft.AspNet.SignalR.Core" />
+        <PackageReference Include="Microsoft.AspNet.SignalR.Owin" />
+        <PackageReference Include="Microsoft.AspNet.SignalR.SystemWeb" />
+        <PackageReference Include="Microsoft.AspNet.WebApi.Client" />
+        <PackageReference Include="Microsoft.AspNet.WebApi.Core" />
+        <PackageReference Include="Microsoft.AspNet.WebApi.Cors" />
+        <PackageReference Include="Microsoft.AspNet.WebApi.OData" />
+        <PackageReference Include="Microsoft.AspNet.WebApi.Owin" />
+        <PackageReference Include="Microsoft.AspNet.WebApi.Tracing" />
+        <PackageReference Include="Microsoft.Data.Edm" />
+        <PackageReference Include="Microsoft.Data.OData" />
+        <PackageReference Include="Microsoft.Data.Services.Client" />
+        <PackageReference Include="Microsoft.OData.Client" />
+        <PackageReference Include="Microsoft.OData.Core" />
+        <PackageReference Include="Microsoft.OData.Edm" />
+        <PackageReference Include="Microsoft.Owin" />
+        <PackageReference Include="Microsoft.Owin.Cors" />
+        <PackageReference Include="Microsoft.Owin.Diagnostics" />
+        <PackageReference Include="Microsoft.Owin.FileSystems" />
+        <PackageReference Include="Microsoft.Owin.Host.HttpListener" />
+        <PackageReference Include="Microsoft.Owin.Host.SystemWeb" />
+        <PackageReference Include="Microsoft.Owin.Hosting" />
+        <PackageReference Include="Microsoft.Owin.Security" />
+        <PackageReference Include="Microsoft.Owin.Security.Cookies" />
+        <PackageReference Include="Microsoft.Owin.Security.MicrosoftAccount" />
+        <PackageReference Include="Microsoft.Owin.Security.OAuth" />
+        <PackageReference Include="Microsoft.Owin.StaticFiles" />
+        <PackageReference Include="Microsoft.Spatial" />
+        <PackageReference Include="Nancy" />
+        <PackageReference Include="Nancy.Owin" />
+        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="Owin" />
+        <PackageReference Include="System.IO" />
+        <PackageReference Include="System.Runtime" />
+        <PackageReference Include="System.Security.Cryptography.Algorithms" />
+        <PackageReference Include="System.Security.Cryptography.Encoding" />
+        <PackageReference Include="System.Security.Cryptography.Primitives" />
+        <PackageReference Include="System.Security.Cryptography.X509Certificates" />
+        <PackageReference Include="System.Spatial" />
+        <PackageReference Include="System.Text.Json" />
+        <PackageReference Include="System.Text.Encodings.Web" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    </ItemGroup>
+</Project>
